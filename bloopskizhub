@@ -1,0 +1,28 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("BLOOPSKIZ HUB", "DarkTheme")
+
+--MAIN
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Da Hood")
+
+Section:NewButton("Pluto Hub", "Da Hood GUI with many feautures", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()
+end)
+Section:NewButton("Mango hub", "Da Hood GUI with many features", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub"))()
+end)
+
+ local Section = Tab:NewSection("Bedwars")
+
+Section:NewButton("Vape V4", "Bedwars GUI with many features", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+ local Section = Tab:NewSection("Arsenal")
+
+ Section:NewButton("Project Evolution V4", "Arsenal GUI", function()
+    loadstring(game:HttpGet("https://projectevo.xyz/v4/script.lua", true))()
+end)
+ Section:NewButton("Thunder Client", "Best Arsenal GUi", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
+end)
