@@ -11,6 +11,9 @@ end)
 Section:NewButton("Mango hub", "Da Hood GUI with many features", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub"))()
 end)
+Section:NewButton("SpaceWare", "Da Hood GUI with many features", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Kazacstan/S/main/S'))()
+end)
 
  local Section = Tab:NewSection("Bedwars")
 
