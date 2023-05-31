@@ -29,3 +29,38 @@ end)
  Section:NewButton("Thunder Client", "Best Arsenal GUi", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))()
 end)
+
+local Section = Tab:NewSection("Infinite Yield")
+
+Section:NewButton("Infinite Yield", "FE Universal Admin Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+-- LOCAL PLAYER
+
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("WalkSpeed", "Makes you go fast", 500, 16, function(s) -- 500 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Makes you become a kangaroo", 500, 16, function(s) -- 500 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("Reset WalkSpeed + JumpPower", "It says what it does in the fucking title you retard", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+-- Other Stuff
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
+CreditsSection:NewLabel("Created by bloopiyas")
+CreditsSection:NewLabel("Scripted by bloopiyas")
+CreditsSection:NewLabel("Owned by bloopiyas")
+CreditsSection:NewLabel("My discord : bloopiyas#3707")
+CreditsSection:NewLabel("My discord server : https://discord.io/bloopskiz ")
